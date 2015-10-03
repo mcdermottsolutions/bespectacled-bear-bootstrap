@@ -7,8 +7,11 @@
     <!-- @if NODE_ENV == 'DEVELOPMENT' -->
     <link rel="stylesheet" href="css/style1.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="css/style2.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/font-awesome-4.4.0.min.css" media="screen" charset="utf-8">
     <!-- @endif -->
     <!-- @if NODE_ENV == 'PRODUCTION' -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.min.css" media="screen" charset="utf-8">
     <!-- @endif -->
   </head>
@@ -17,11 +20,14 @@
     <h3>Hungry yet thoughtful</h3>
     <img src="img/bespectacled-bear.png" alt="bespectacled bear">
     <!-- @if NODE_ENV == 'DEVELOPMENT' -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/script1.js"></script>
     <script src="js/script2.js"></script>
     <script src="localhost:35729/livereload.js"></script>
     <!-- @endif -->
     <!-- @if NODE_ENV == 'PRODUCTION' -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/main.min.js"></script>
     <!-- @endif -->
   </body>

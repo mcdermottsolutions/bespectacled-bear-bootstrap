@@ -84,7 +84,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'dist/js/main.min.js': 'dev/js/*.js'
+          'dist/js/main.min.js': ['dev/js/*.js','!dev/js/jquery-2.1.4.js']
         }
       }
     },
@@ -94,7 +94,7 @@ module.exports = function(grunt) {
       dev: {
         expand: true,
         cwd: 'src/',
-        src: ['*','img/*'],
+        src: ['*','img/*','js/**','js/*.js'],
         dest: 'dev/',
         filter: 'isFile',
       },
