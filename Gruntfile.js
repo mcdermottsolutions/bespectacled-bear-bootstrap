@@ -94,7 +94,7 @@ module.exports = function(grunt) {
       dev: {
         expand: true,
         cwd: 'src/',
-        src: ['*','img/*','js/**','js/*.js'],
+        src: ['*','img/*','js/**','js/*.js','css/font-awesome-4.4.0.min.css'],
         dest: 'dev/',
         filter: 'isFile',
       },
