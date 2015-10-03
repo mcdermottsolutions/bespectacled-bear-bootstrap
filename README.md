@@ -105,4 +105,8 @@ and this will put the production version in the dist folder.  All css files are 
 
 ---
 
+I've attempted to include all 3rd party asset files like jquery, font aweseom and the google font in the dev version so you can develop locally without an internet connection.  And then when you run grunt prod and make your dist version, the grunt preprocess module makes the links in your production index.html file to link to the external CDN version of the 3rd party asset for faster load time.  The local versions of the files are not copied over to the dist folder, so it's all nice and clean.
+
+---
+
 Let me know if you have any questions or anything.
