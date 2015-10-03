@@ -1,6 +1,6 @@
-## Bespectacled Bear
+## Bespectacled Bear Bootstrap
 
-This is an empty Grunt starter project, preloaded with goodies like Babel, Sass, livereload, etc.  If you already have Grunt, there's very little setup.  It's just an empty web project, ready to go.
+This is an empty Grunt starter project, preloaded with goodies like Bootstrap, Babel, Sass, livereload, etc.  If you already have Grunt, there's very little setup.  It's just an empty web project, ready to go.
 
 Demo of just the dev (uncompressed) folder pushed live: 
 
