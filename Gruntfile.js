@@ -123,7 +123,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 9000,
-          base: './dist',
+          base: './dev',
           hostname: '0.0.0.0',
           protocol: 'http',
           livereload: true,
