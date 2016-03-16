@@ -17,7 +17,7 @@ http://www.mcdermottsolutions.com/demos/bespectacled-bear-bootstrap/dist/index.h
 
 ## Motivation
 
-This is a quick start web project I use.  My favorite feature is livereload, but grunt's compressed and combined production compile is also nice.
+Originally I made this to mess with Babel (which I've since removed).  Now I use this for livereload and also for grunt's compressed and combined production compile.  It's also nice to know where all my files are and to not have to do all the setup from scratch everytime I start a new project.
 
 ## Installation
 
