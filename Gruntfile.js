@@ -77,7 +77,7 @@ module.exports = function(grunt) {
       dev: {
         expand: true,
         cwd: 'src/',
-        src: ['*','img/*','js/**','js/*.js','css/font-awesome-4.4.0.min.css'],
+        src: ['*','img/*','js/**','js/*.js','css/font-awesome-4.5.0.min.css'],
         dest: 'dev/',
         filter: 'isFile',
       },
