@@ -16,6 +16,15 @@ module.exports = function(grunt) {
       }
     },
 
+    // jshint
+    jshint: {
+      all: [
+        'dev/js/*.js',
+        '!dev/js/bootstrap.js',
+        '!dev/js/jquery-2.2.1.js'
+      ]
+    },
+
     // preprocess
     preprocess : {
       dev : {
@@ -97,7 +106,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: 'src/**',
-        tasks: ['env:dev', 'clean:dev', 'sass', 'copy:dev', 'preprocess:dev']
+        tasks: ['env:dev', 'clean:dev', 'sass', 'copy:dev', 'jshint', 'preprocess:dev']
       }
     },
 
@@ -121,6 +130,7 @@ module.exports = function(grunt) {
 
   // // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -131,7 +141,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-env');
 
   // Default task(s).
-  grunt.registerTask('default', ['env:dev', 'clean:dev', 'sass', 'copy:dev', 'preprocess:dev']);
+  grunt.registerTask('default', ['env:dev', 'clean:dev', 'sass', 'copy:dev', 'jshint', 'preprocess:dev']);
   grunt.registerTask('prod', ['env:prod', 'clean:prod', 'cssmin', 'uglify', 'copy:prod', 'preprocess:prod']);
   grunt.registerTask('server', ['connect','watch']);
 
