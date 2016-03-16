@@ -1,8 +1,8 @@
 ## Bespectacled Bear Bootstrap
 
-This is an empty Grunt starter project, preloaded with goodies like Bootstrap, Babel, Sass, livereload, etc.  If you already have Grunt, there's very little setup.  It's just an empty web project, ready to go.
+This is an empty Grunt starter project, preloaded with goodies like Bootstrap (3.3.6), Sass, livereload, jQuery (2.2.1), and Font Awesome (4.5.0).  If you already have Grunt, there's very little setup.  It's just an empty web project, ready to go.
 
-Demo of just the dev (uncompressed) folder pushed live: 
+Demo of just the dev (uncompressed) folder pushed live:
 
 http://www.mcdermottsolutions.com/demos/bespectacled-bear-bootstrap/dev/index.html
 
@@ -17,7 +17,7 @@ http://www.mcdermottsolutions.com/demos/bespectacled-bear-bootstrap/dist/index.h
 
 ## Motivation
 
-Mostly I was trying to get Babel running so I could write ES6 JavaScript.  But Bespectacled Bear also streamlines new web projects, skipping the setup time and allows you to quickly make them minimized and ready for production.
+This is a quick start web project I use.  My favorite feature is livereload, but grunt's compressed and combined production compile is also nice.
 
 ## Installation
 
@@ -52,7 +52,7 @@ The project directory structure looks like this:
       - script2.js
       - script2.js.map
    - index.html
-   
+
 -- dist
    -- css
       - style.min.css
@@ -61,7 +61,7 @@ The project directory structure looks like this:
    -- js
       - main.min.js
    - index.html
-   
+
 -- src
    -- img
       - bespectacled-bear.png
@@ -72,7 +72,7 @@ The project directory structure looks like this:
       - style1.scss
       - style2.scss
   - index.html
-  
+
 - Gruntfile.js
 - package.json
 ```
